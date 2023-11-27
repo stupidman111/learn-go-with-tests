@@ -34,14 +34,6 @@ func TestAreaB(t *testing.T) {
 
     }
 
-	a := struct{
-		r Rectangle
-		c Circle
-	} {
-		r: Rectangle{},
-		c: Circle{}, 
-	}
-
     for _, tt := range areaTests {
         got := tt.shape.Area()
         if got != tt.want {
