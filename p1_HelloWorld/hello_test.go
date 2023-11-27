@@ -2,6 +2,7 @@ package main
 
 import "testing"
 
+// test Hello()
 func TestHello(t *testing.T) {
 	got := Hello()
 	want := "Hello, World"
